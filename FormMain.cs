@@ -1,5 +1,6 @@
 ﻿using Schnittstellen.Model;
 using Schnittstellen.Presenter;
+using Schnittstellen.View.Bindings;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -44,6 +45,7 @@ namespace Schnittstellen
             InitializeComponent();
             m_explorerPresenter = new ProjectExplorerPresenter(this.projectExplorerViewMain, m_loadedProject);
             m_explorerPresenter.NewDeviceRequested += m_explorerPresenter_NewDeviceRequested;
+            m_explorerPresenter.EditDeviceRequested += m_explorerPresenter_EditDeviceRequested;
             
             InitDemo();
         }
@@ -62,6 +64,22 @@ namespace Schnittstellen
                 m_loadedProject.Devices.Add(newDev);
             }
         }
+
+        private void m_explorerPresenter_EditDeviceRequested(object sender, Presenter.EventArgs.DeviceEventArgs e)
+        {
+            if (e.Device == null)
+                return;
+            Device dummy = e.Device.Clone();
+            FormAddEditDevice formEdit = new FormAddEditDevice();
+            formEdit.Text = "Geräte Eigenschaften";
+            EditDevicePresenter presenter = new EditDevicePresenter(formEdit.EditDeviceView, dummy);
+            formEdit.ShowDialog();
+            if (formEdit.DialogResult == System.Windows.Forms.DialogResult.OK)
+            {
+                e.Device.Name = dummy.Name;
+                e.Device.DeviceType = dummy.DeviceType;
+            }
+        }
         #endregion
 
         #region Demo
@@ -72,9 +90,9 @@ namespace Schnittstellen
             m_loadedProject.Devices.Add(new Device("Robot"));
             m_loadedProject.Devices.Add(new Device("SPS"));
             InterfaceDescription desc = new InterfaceDescription(m_loadedProject.Devices[0], m_loadedProject.Devices[1]);
-
             m_explorerPresenter.Project = m_loadedProject;
         }
         #endregion
+
     }
 }

@@ -34,14 +34,15 @@
             this.neuesProjektToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.projektöffnenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.projektspeichernToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.beendenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.projektToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eigenschaftenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
-            this.projectExplorerViewMain = new Schnittstellen.View.ProjectExplorerView();
             this.splitContainerMain = new System.Windows.Forms.SplitContainer();
+            this.projectExplorerViewMain = new Schnittstellen.View.ProjectExplorerView();
+            this.panelSpacer = new System.Windows.Forms.Panel();
+            this.panelSpacerBottom = new System.Windows.Forms.Panel();
             this.interfaceDescriptionEditorView1 = new Schnittstellen.View.InterfaceDescriptionEditorView();
             this.menuStripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerMain)).BeginInit();
@@ -52,7 +53,8 @@
             // 
             // menuStripMain
             // 
-            this.menuStripMain.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.menuStripMain.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.menuStripMain.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dateiToolStripMenuItem,
             this.projektToolStripMenuItem,
@@ -65,86 +67,86 @@
             // 
             // dateiToolStripMenuItem
             // 
+            this.dateiToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dateiToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.dateiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.neuesProjektToolStripMenuItem,
             this.projektöffnenToolStripMenuItem,
             this.projektspeichernToolStripMenuItem,
-            this.toolStripMenuItem1,
             this.beendenToolStripMenuItem});
+            this.dateiToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.dateiToolStripMenuItem.Name = "dateiToolStripMenuItem";
-            this.dateiToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.dateiToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.dateiToolStripMenuItem.Text = "&Datei";
             // 
             // neuesProjektToolStripMenuItem
             // 
+            this.neuesProjektToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.neuesProjektToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.neuesProjektToolStripMenuItem.Name = "neuesProjektToolStripMenuItem";
-            this.neuesProjektToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.neuesProjektToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.neuesProjektToolStripMenuItem.Text = "&Neues Projekt";
             // 
             // projektöffnenToolStripMenuItem
             // 
+            this.projektöffnenToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.projektöffnenToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.projektöffnenToolStripMenuItem.Name = "projektöffnenToolStripMenuItem";
-            this.projektöffnenToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.projektöffnenToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.projektöffnenToolStripMenuItem.Text = "Projekt &öffnen";
             // 
             // projektspeichernToolStripMenuItem
             // 
+            this.projektspeichernToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.projektspeichernToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.projektspeichernToolStripMenuItem.Name = "projektspeichernToolStripMenuItem";
-            this.projektspeichernToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.projektspeichernToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.projektspeichernToolStripMenuItem.Text = "Projekt &speichern";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(162, 6);
             // 
             // beendenToolStripMenuItem
             // 
+            this.beendenToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.beendenToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.beendenToolStripMenuItem.Name = "beendenToolStripMenuItem";
-            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.beendenToolStripMenuItem.Size = new System.Drawing.Size(193, 22);
             this.beendenToolStripMenuItem.Text = "&Beenden";
             // 
             // projektToolStripMenuItem
             // 
+            this.projektToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.projektToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.eigenschaftenToolStripMenuItem});
             this.projektToolStripMenuItem.Name = "projektToolStripMenuItem";
-            this.projektToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.projektToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             this.projektToolStripMenuItem.Text = "&Projekt";
             // 
             // eigenschaftenToolStripMenuItem
             // 
+            this.eigenschaftenToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.eigenschaftenToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.eigenschaftenToolStripMenuItem.Name = "eigenschaftenToolStripMenuItem";
-            this.eigenschaftenToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.eigenschaftenToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.eigenschaftenToolStripMenuItem.Text = "&Eigenschaften";
             // 
             // exportToolStripMenuItem
             // 
+            this.exportToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.exportToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.exportToolStripMenuItem.Text = "Export";
             // 
             // statusStripMain
             // 
-            this.statusStripMain.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.statusStripMain.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.statusStripMain.Location = new System.Drawing.Point(0, 716);
             this.statusStripMain.Name = "statusStripMain";
             this.statusStripMain.Size = new System.Drawing.Size(1234, 22);
             this.statusStripMain.TabIndex = 1;
             this.statusStripMain.Text = "statusStripMain";
             // 
-            // projectExplorerViewMain
-            // 
-            this.projectExplorerViewMain.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.projectExplorerViewMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.projectExplorerViewMain.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.projectExplorerViewMain.Location = new System.Drawing.Point(0, 0);
-            this.projectExplorerViewMain.Name = "projectExplorerViewMain";
-            this.projectExplorerViewMain.Size = new System.Drawing.Size(277, 692);
-            this.projectExplorerViewMain.TabIndex = 2;
-            // 
             // splitContainerMain
             // 
+            this.splitContainerMain.BackColor = System.Drawing.SystemColors.ControlDark;
             this.splitContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerMain.Location = new System.Drawing.Point(0, 24);
             this.splitContainerMain.Name = "splitContainerMain";
@@ -163,9 +165,37 @@
             this.splitContainerMain.SplitterWidth = 5;
             this.splitContainerMain.TabIndex = 3;
             // 
+            // projectExplorerViewMain
+            // 
+            this.projectExplorerViewMain.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.projectExplorerViewMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.projectExplorerViewMain.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.projectExplorerViewMain.Location = new System.Drawing.Point(0, 0);
+            this.projectExplorerViewMain.Name = "projectExplorerViewMain";
+            this.projectExplorerViewMain.Size = new System.Drawing.Size(277, 692);
+            this.projectExplorerViewMain.TabIndex = 0;
+            // 
+            // panelSpacer
+            // 
+            this.panelSpacer.BackColor = System.Drawing.SystemColors.ControlText;
+            this.panelSpacer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSpacer.Location = new System.Drawing.Point(0, 24);
+            this.panelSpacer.Name = "panelSpacer";
+            this.panelSpacer.Size = new System.Drawing.Size(1234, 1);
+            this.panelSpacer.TabIndex = 4;
+            // 
+            // panelSpacerBottom
+            // 
+            this.panelSpacerBottom.BackColor = System.Drawing.SystemColors.ControlText;
+            this.panelSpacerBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelSpacerBottom.Location = new System.Drawing.Point(0, 715);
+            this.panelSpacerBottom.Name = "panelSpacerBottom";
+            this.panelSpacerBottom.Size = new System.Drawing.Size(1234, 1);
+            this.panelSpacerBottom.TabIndex = 5;
+            // 
             // interfaceDescriptionEditorView1
             // 
-            this.interfaceDescriptionEditorView1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.interfaceDescriptionEditorView1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.interfaceDescriptionEditorView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.interfaceDescriptionEditorView1.Location = new System.Drawing.Point(0, 0);
             this.interfaceDescriptionEditorView1.Name = "interfaceDescriptionEditorView1";
@@ -178,6 +208,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1234, 738);
+            this.Controls.Add(this.panelSpacerBottom);
+            this.Controls.Add(this.panelSpacer);
             this.Controls.Add(this.splitContainerMain);
             this.Controls.Add(this.statusStripMain);
             this.Controls.Add(this.menuStripMain);
@@ -207,13 +239,13 @@
         private System.Windows.Forms.ToolStripMenuItem neuesProjektToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem projektöffnenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem projektspeichernToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem beendenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem projektToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem eigenschaftenToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
+        private System.Windows.Forms.Panel panelSpacer;
+        private System.Windows.Forms.Panel panelSpacerBottom;
         private View.InterfaceDescriptionEditorView interfaceDescriptionEditorView1;
-
     }
 }
 
