@@ -41,9 +41,10 @@
             this.statusStripMain = new System.Windows.Forms.StatusStrip();
             this.splitContainerMain = new System.Windows.Forms.SplitContainer();
             this.projectExplorerViewMain = new Schnittstellen.View.ProjectExplorerView();
+            this.interfaceDescriptionEditorView1 = new Schnittstellen.View.InterfaceDescriptionEditorView();
             this.panelSpacer = new System.Windows.Forms.Panel();
             this.panelSpacerBottom = new System.Windows.Forms.Panel();
-            this.interfaceDescriptionEditorView1 = new Schnittstellen.View.InterfaceDescriptionEditorView();
+            this.geräteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerMain)).BeginInit();
             this.splitContainerMain.Panel1.SuspendLayout();
@@ -115,6 +116,7 @@
             // 
             this.projektToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.projektToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.geräteToolStripMenuItem,
             this.eigenschaftenToolStripMenuItem});
             this.projektToolStripMenuItem.Name = "projektToolStripMenuItem";
             this.projektToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
@@ -175,6 +177,15 @@
             this.projectExplorerViewMain.Size = new System.Drawing.Size(277, 692);
             this.projectExplorerViewMain.TabIndex = 0;
             // 
+            // interfaceDescriptionEditorView1
+            // 
+            this.interfaceDescriptionEditorView1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.interfaceDescriptionEditorView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.interfaceDescriptionEditorView1.Location = new System.Drawing.Point(0, 0);
+            this.interfaceDescriptionEditorView1.Name = "interfaceDescriptionEditorView1";
+            this.interfaceDescriptionEditorView1.Size = new System.Drawing.Size(952, 692);
+            this.interfaceDescriptionEditorView1.TabIndex = 0;
+            // 
             // panelSpacer
             // 
             this.panelSpacer.BackColor = System.Drawing.SystemColors.ControlText;
@@ -193,14 +204,14 @@
             this.panelSpacerBottom.Size = new System.Drawing.Size(1234, 1);
             this.panelSpacerBottom.TabIndex = 5;
             // 
-            // interfaceDescriptionEditorView1
+            // geräteToolStripMenuItem
             // 
-            this.interfaceDescriptionEditorView1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.interfaceDescriptionEditorView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.interfaceDescriptionEditorView1.Location = new System.Drawing.Point(0, 0);
-            this.interfaceDescriptionEditorView1.Name = "interfaceDescriptionEditorView1";
-            this.interfaceDescriptionEditorView1.Size = new System.Drawing.Size(952, 692);
-            this.interfaceDescriptionEditorView1.TabIndex = 0;
+            this.geräteToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.geräteToolStripMenuItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.geräteToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.geräteToolStripMenuItem.Name = "geräteToolStripMenuItem";
+            this.geräteToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
+            this.geräteToolStripMenuItem.Text = "&Geräte";
             // 
             // FormMain
             // 
@@ -246,6 +257,7 @@
         private System.Windows.Forms.Panel panelSpacer;
         private System.Windows.Forms.Panel panelSpacerBottom;
         private View.InterfaceDescriptionEditorView interfaceDescriptionEditorView1;
+        private System.Windows.Forms.ToolStripMenuItem geräteToolStripMenuItem;
     }
 }
 

@@ -71,6 +71,12 @@
     <Compile Include="FormAddEditDevice.Designer.cs">
       <DependentUpon>FormAddEditDevice.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAddEditInterfaceDescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddEditInterfaceDescription.Designer.cs">
+      <DependentUpon>FormAddEditInterfaceDescription.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAddEditDevice.resx">
       <DependentUpon>FormAddEditDevice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddEditInterfaceDescription.resx">
+      <DependentUpon>FormAddEditInterfaceDescription.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

@@ -46,6 +46,7 @@ namespace Schnittstellen
             m_explorerPresenter = new ProjectExplorerPresenter(this.projectExplorerViewMain, m_loadedProject);
             m_explorerPresenter.NewDeviceRequested += m_explorerPresenter_NewDeviceRequested;
             m_explorerPresenter.EditDeviceRequested += m_explorerPresenter_EditDeviceRequested;
+            m_explorerPresenter.NewInterfaceRequested += m_explorerPresenter_NewInterfaceRequested;
             
             InitDemo();
         }
@@ -78,6 +79,22 @@ namespace Schnittstellen
             {
                 e.Device.Name = dummy.Name;
                 e.Device.DeviceType = dummy.DeviceType;
+            }
+        }
+
+        private void m_explorerPresenter_NewInterfaceRequested(object sender, Presenter.EventArgs.DeviceEventArgs e)
+        {
+            if (e.Device == null)
+                return;
+            FormAddEditInterfaceDescription formNew = new FormAddEditInterfaceDescription();
+            formNew.EditInterfaceView.AvailableDevices = m_loadedProject.Devices.ToArray();
+
+            InterfaceDescription newInterface = new InterfaceDescription(e.Device, e.Device);
+            EditInterfaceDescriptionPropertiesPresenter presenter = new EditInterfaceDescriptionPropertiesPresenter(newInterface, formNew.EditInterfaceView);
+            formNew.ShowDialog();
+            if (formNew.DialogResult != System.Windows.Forms.DialogResult.OK)
+            {
+                newInterface.RemoveFromDevices();
             }
         }
         #endregion

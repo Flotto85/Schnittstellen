@@ -16,3 +16,4 @@ C:\Development\Schnittstellen\Schnittstellen\obj\Debug\Schnittstellen.Properties
 C:\Development\Schnittstellen\Schnittstellen\obj\Debug\Schnittstellen.csproj.GenerateResource.Cache
 C:\Development\Schnittstellen\Schnittstellen\obj\Debug\Schnittstellen.exe
 C:\Development\Schnittstellen\Schnittstellen\obj\Debug\Schnittstellen.pdb
+C:\Development\Schnittstellen\Schnittstellen\obj\Debug\Schnittstellen.FormAddEditInterfaceDescription.resources
